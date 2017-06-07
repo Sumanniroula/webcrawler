@@ -1,0 +1,24 @@
+
+
+
+<h1>La Moj Gar Bhai</h1><br>
+{% csrf_token %}
+{% for p in post %}
+
+    <a href="{{ urls }}{{ p.namelink }}"target="_blank">{{ urls }}{{ p.namelink }}</a><br>
+{% endfor %}
+
+
+
+
+
+
+
+{% comment %}
+<form method="post" action="{% url 'delete' %}" >
+    {% csrf_token %}
+
+    <button type="submit">Delete All</button>
+
+</form>
+{% endcomment %}

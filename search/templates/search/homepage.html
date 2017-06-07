@@ -1,0 +1,15 @@
+{% comment %}<h1>New Search</h1>
+    <form action={% url 'home' %} method="post">{% csrf_token %}
+
+        {{ form.as_p }}
+      {% comment %}  <input type="text" name="linked" size="50">
+
+        <button type="submit" value="add">Save</button>
+    </form>  {% endcomment %}
+
+<h1>Contact</h1>
+<form role="form" action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+</form>
